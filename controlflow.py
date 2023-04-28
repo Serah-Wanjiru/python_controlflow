@@ -18,9 +18,10 @@ def sum_of_even(numbers):
     for i in numbers:
         if i%2==0:
            x+=i
-    return x 
+           print(x)
+    
 numbers=[23,12,43,34,16] 
-print(sum_of_even(numbers))  
+(sum_of_even(numbers))  
 
 
 # //Write a function that takes an integer argument and 
@@ -30,11 +31,11 @@ def is_primenumber(n):
    
     if n <= 1:
         print("Not prime")
-        return
+       
     for i in range(2, int(n**0.5)+1):
         if n % i == 0:
             print("Not prime")
-            return
+           
     print("Prime")
     
 is_primenumber(5)    
@@ -52,7 +53,7 @@ def sum_divisible_by_3(x, y):
         if i % 3 == 0:
             total += i
             
-            return total
+            
         
 print(sum_divisible_by_3(10,20))        
     
